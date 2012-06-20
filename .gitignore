@@ -1,0 +1,10 @@
+# .gitignore for planeta.plone.es buildout
+bin
+conf
+develop-eggs
+downloads
+eggs
+parts
+theme/config.ini
+var
+.installed.cfg
