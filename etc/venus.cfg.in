@@ -6,13 +6,19 @@
 # venus.cfg.in → venus.cfg.top + feeds.cfg → venus.cfg
 #
 # —Sean Kelly, kelly@seankelly.biz, Plone AI Team
+#
+# 2012-06-20 Changes for Planeta Plone.es by
+# Danilo Dellaquila, ddellaquila@gmail.com
+#
 
 [Planet]
-name            = Planet Plone
-link            = http://planet.plone.org/
-owner_name      = Plone Website Team
-owner_email     = plone-website@lists.sourceforge.net
+name            = Planeta Plone.es
+link            = http://plone.es/planet
+owner_name      = Plone.es Team
+owner_email     = plone-usuarios-plone@lists.plone.org
 output_theme    = ${buildout:directory}/theme
 output_dir      = ${buildout:htdocs-directory}
 cache_directory = ${buildout:directory}/var/cache
+date_format     = %d/%m/%Y %H:%M
+new_date_format = %d/%m/%Y
 items_per_page  = 15
