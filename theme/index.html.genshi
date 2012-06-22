@@ -7,37 +7,69 @@
 		<title>
 			$feed.config.name
 		</title>
-		<link rel="alternate" type="application/rss+xml" href="http://feeds.plone.org/ploneblogs" title="Plone Blogs" />
-		<link rel="stylesheet" href="http://plone.org/plone.css" type="text/css" media="screen" charset="utf-8" />
-		<base href="http://plone.org/" />
+		<link rel="alternate" type="application/rss+xml" href="http://plone.es/planet" title="Planeta Plone.es" />
+		<link rel="stylesheet" href="plone-es-external.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="plone-es.css" type="text/css" media="screen" charset="utf-8" />
+		<base href="http://plone.es/" />
 	</head>
-	<body id="planet-plone-index">
-		<div id="outer-wrapper">
-			<div id="inner-wrapper">
-				<div id="nav">
-					<form id="search" name="searchform" action="http://plone.org/search">
-						<input id="search-site" name="SearchableText" type="search" title="Search this site…" accesskey="4" class="inputLabel" size="15" />
-					</form>
-					<div id="user">
-						<a href="http://plone.org/login">Log in</a>
-					</div>
-					<ul id="main-nav" class="navigation">
-						<li id="portaltab-index_html" class="plain"><a href="http://plone.org" title="">Home</a></li><li id="portaltab-products" class="plain"><a href="http://plone.org/products" title="Plone releases and available add-on products for Plone. Make sure you have Plone installed before downloading the add-ons — and make sure you are using add-ons that have been certified for use with your particular version.">Downloads</a></li><li id="portaltab-documentation" class="plain"><a href="http://plone.org/documentation" title="The primary source for Plone documentation.">Documentation</a></li><li id="portaltab-contribute" class="plain"><a href="http://plone.org/contribute" title="Contains all developer-related material.">Get Involved</a></li><li id="portaltab-foundation" class="plain"><a href="http://plone.org/foundation" title="The Plone Foundation exists to further the development, marketing, and legal affairs of Plone and the Plone community.">Plone Foundation</a></li><li id="portaltab-support" class="plain"><a href="http://plone.org/support" title="Contact details for the Plone project.">Support</a></li>
-					</ul>
-				</div>
+	<body id="planet-plone-index" class="template-document_view portaltype-document site-Plone.es section-home-page" dir="ltr">
+  <div id="visual-portal-wrapper">
+
+        <div class="row" id="portal-top">
+          <ul id="portal-siteactions">
+            <li id="siteaction-sitemap"><a title="Mapa del Sitio" accesskey="3" href="http://plone.es/sitemap">Mapa del Sitio</a></li>
+            <li id="siteaction-accessibility"><a title="Accesibilidad" accesskey="0" href="http://plone.es/accessibility-info">Accesibilidad</a></li>
+            <li id="siteaction-contact"><a title="Contacto" accesskey="9" href="http://plone.es/contact-info">Contacto</a></li>
+          </ul>
+
+          <div class="cell width-full position-0">
+            <div id="portal-header">
+
+              <div id="portal-personaltools-wrapper">
+                <dl id="portal-personaltools" class="actionMenu deactivated"><dt id="anon-personalbar">
+                  <a id="personaltools-login" href="http://plone.es/login">Entrar</a> </dt>
+                </dl>
+              </div>
+
+              <div id="portal-searchbox">
+                <form id="search" name="searchform" action="http://plone.es/search">
+                  <input type="text" id="searchGadget" class="searchField inputLabel inputLabelActive" accesskey="4" title="Buscar en el Sitio" size="18" name="SearchableText" autocomplete="off" />
+                  <input type="submit" value="Buscar" class="searchButton" />
+                </form>
+              </div>
+
+              <a href="http://plone.es" accesskey="1" title="Plone.es" id="portal-logo"><img width="215" height="56" title="Plone.es" alt="Plone.es" src="logo.png" /></a>
+
+              <div id="slimbar">
+                <ul>
+                  <li><a title="Plone Chile" href="http://www.plonechile.cl" target="_blank">cl</a> </li>
+                  <li><a title="Plone España" href="http://plone.es/espana" target="_blank">es</a> </li>
+                  <li><a title="Plone México" href="http://plone.mx" target="_blank">mx</a> </li>
+                  <li><a title="Plone Venezuela" href="http://plone.org.ve" target="_blank">ve</a> </li>
+                  <li><a title="Plone Cono Sur" href="http://plone.org/countries/conosur/index_html" target="_blank">conosur</a></li>
+                </ul>
+              </div>
+
+              <ul id="portal-globalnav">
+                <li id="portaltab-descubre" class="plain"><a title="" href="http://plone.es/descubre">Descubre</a></li>
+                <li id="portaltab-participa" class="plain"><a title="" href="http://plone.es/participa">Participa</a></li>
+                <li id="portaltab-difunde" class="plain"><a title="" href="http://plone.es/difunde">Difunde</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
 				<div id="content-wrapper">
-					<div class="grid-row">
-						<div class="grid-cell position-leftmost width-two-thirds">
+					<div class="row">
+						<div class="cell width-12 position-0">
 							<div id="region-content" class="documentContent">
 								<div id="content">
 									<h1 class="documentFirstHeading">
 										$feed.config.name
 									</h1>
 									<p class="documentDescription">
-									This is where developers and integrators write about Plone, and is your best source for
-									news and developments from the community.
+                  Aquí es donde los desarrolladores y integradores escriben sobre Plone en español.
 									</p>
-
 
 									<py:for each="entry in entries">
 									<div class="channelgroup" py:strip="not entry.new_date">
@@ -71,28 +103,25 @@
 								</div><span id="contentBottomLeft"></span><span id="contentBottomRight"></span>
 							</div>
 						</div><!-- End cell -->
-						<div class="grid-cell position-two-thirds width-third">
+						<div class="cell width-4 position-12">
 							<div id="sidebar">
 								<div class="visualPadding">
-									<div id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e746572486f77546f0a706f72746c65745f7068635f61626f7574" class="portletWrapper kssattr-portlethash-706c6f6e652e6c656674636f6c756d6e0a636f6e74656e745f747970650a48656c7043656e746572486f77546f0a706f72746c65745f7068635f61626f7574">
-										<div>
-											<dl class="portlet">
+									<div id="portlet-planet" class="portletWrapper">
+                    <dl class="portlet">
 												<dt class="portletHeader">
-													About
+													Planeta Plone.es
 												</dt>
 												<dd class="portletItem">
-													<p>Last updated: $feed.updated</p>
-													<p>To subscribe to this feed in the reader of your choice, 
-														<a href="http://feeds.plone.org/ploneblogs">click here</a>.
+													<p>Ultima actualización: $feed.updated</p>
+													<p><a href="http://plone.es/planet/atom.xml"
+                          title="Planeta Plone.es">Suscribirse a esta fuente RSS permanentemente</a>.
 													</p>
-													<p>To have your Plone-centric blog added to
-														Planet Plone, please file an issue in the
-														Plone <a href="http://dev.plone.org/plone/newticket?component=Website">issue
-														tracker, under component "Website."</a>
+													<p>Puede añadir su blog sobre Plone haciendo un fork del repositorio
+                          <a href="https://github.com/plone-es/planeta.plone.es.git"
+                          title="planeta.plone.es">planeta.plone.es</a> en GitHub.
 													</p>
 												</dd>
 											</dl>
-										</div>
 									</div>
 								</div>
 							</div>
@@ -100,7 +129,69 @@
 					</div><!-- End row -->
 				</div>
 				<div style="clear:both"></div>
-			</div><!-- end inner-wrapper -->
-		</div><!-- end outer-wrapper -->
+
+        <div class="row" id="portal-footer">
+          <div class="cell position-0 width-full" id="footer-portlets"><div class="row" id="footer-portlets">
+            <div class="FooterPortletA cell position-0 width-3">
+              <div class="portletWrapper" ><div class="portletStaticText portlet-static-atajos">
+                <h3>Atajos</h3>
+                <ul>
+                  <li><a class="internal-link" href="http://plone.es/descubre/descarga-plone"> Descarga </a></li>
+                  <li><a class="internal-link" href="http://plone.es/descubre/documentacion"> Documentación</a></li>
+                  <li><a class="internal-link" href="http://plone.es/difunde/marketing"> Marketing </a></li>
+                  <li><a class="internal-link" href="http://plone.es/descubre/faq"> FAQ</a></li>
+                  <li><a class="internal-link" href="http://plone.es/login"> Login</a></li>
+                </ul>
+              </div> </div>
+            </div>
+            <div class="FooterPortletB cell position-3 width-3">
+              <div class="portletWrapper"><div class="portletStaticText portlet-static-ayuda">
+                <h3>Ayuda</h3>
+                <ul>
+                  <li><a href="http://usarios-plone.2295514.n2.nabble.com/" target="_blank"> Foro / Mailing List </a></li>
+                  <li><a href="http://plone.es/participa/chat">Chat</a></li>
+                </ul>
+              </div> </div>
+            </div>
+            <div class="FooterPortletC cell position-6 width-3">
+              <div class="portletWrapper"><div class="portletStaticText portlet-static-social">
+                <h3>Siguenos en</h3>
+                <ul><li class="rss-link"><a title="Suscríbete por RSS a las noticias de Plone.es" href="http://plone.es/noticias/aggregator/RSS"> Noticias Plone.es </a></li>
+                  <li class="rss-link"><a href="http://plone.es/planet/atom.xml"> Planet Plone.es </a></li>
+                  <li class="twitter-link"><a title="Siguenos en Twitter" href="http://twitter.com/plone_es" target="_blank"> Twitter </a></li>
+                </ul>
+              </div> </div>
+            </div>
+            <div class="FooterPortletD cell position-9 width-3">
+              <div class="portletWrapper"><div class="portletStaticText portlet-static-plone-network">
+                <h3>Webs Plone</h3>
+                  <ul>
+                    <li><a title="Plone Content Management System" target="_blank" href="http://plone.org" class="external_plonesite">Plone.org </a></li>
+                    <li><a title="Plone Network" target="_blank" href="http://plone.net" class="external_plonesite">Plone.net </a></li>
+                  </ul>
+               </div> </div>
+            </div>
+            <div class="FooterPortletE cell position-12 width-4">
+              <div class="portletWrapper">
+                <p><img title="Desarrolado con Plone" src="++theme++plonetheme.plonees/images/logofoot.png" alt="Desarrolado con Plone" /></p>
+                <p><b>Plone.es</b> es desarrollado con <a href="http://plone.org" target="_blank">Plone<sup>&reg;</sup></a>
+                CMS de Fuentes Abiertos de la <a href="http://plone.org/foundation" target="_blank"><b>Fundación Plone</b></a>
+                <acronym title="Copyright">&copy;</acronym> 2000- <span>2012</span> </p>
+                <p>Web alojada en <a target="_blank" href="http://www.k-gigas.com/hosting-plone"> K-Gigas.com</a>,
+                para más informaciones mira en <b><a href="http://plone.es/creditos" target="_blank">créditos</a></b>.</p>
+              </div>
+            </div>
+            <div class="row visualClear"> </div>
+          </div>
+        </div> <!-- end portal-footer -->
+        <div class="cell position-0 width-full" id="footer-licence">
+          <div class="cc-license">
+            <a href="http://creativecommons.org/licenses/by-sa/2.5/es/" rel="license" target="_blank"> <img src="/planet/images/cc-by-sa-es.png" style="border-width:0" alt="Licencia de Creative Commons" /></a>
+            El contenido de este sitio web es distribuido bajo una licencia de <a href="http://creativecommons.org/licenses/by-sa/2.5/es/" rel="license" target="_blank"><strong>Creative Commons</strong> Reconocimiento-CompartirIgual 2.5 España</a>.
+          </div>
+        </div> <!-- end footer-license -->
+      </div>
+
+	</div><!-- end visual-portal-wrapper -->
 	</body>
 </html>

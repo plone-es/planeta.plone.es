@@ -20,9 +20,12 @@ template_directories:
 	${venus:location}/themes/classic_fancy
 
 bill_of_materials:
-	plone-external.css
-	plone-logo-56-white-bg.png
+	plone-es-external.css
+	plone-es.css
+	logo.png
 	favicon.ico
-	images/feed-icon-10x10.png
-	images/logo.png
-	images/venus.png
+    images/cc-by-sa-es.png
+    images/ico_link.gif
+    images/rss_icon.png
+    images/search_icon.gif
+    images/twitter_icon.png
