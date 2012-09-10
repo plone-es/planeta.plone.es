@@ -130,59 +130,69 @@
 				</div>
 				<div style="clear:both"></div>
 
-        <div class="row" id="portal-footer">
-          <div class="cell position-0 width-full" id="footer-portlets"><div class="row" id="footer-portlets">
+    <div class="row" id="portal-footer">
+    	<div id="footer-portlets" class="cell position-0 width-full">
             <div class="FooterPortletA cell position-0 width-3">
-              <div class="portletWrapper" ><div class="portletStaticText portlet-static-atajos">
-                <h3>Atajos</h3>
-                <ul>
-                  <li><a class="internal-link" href="http://plone.es/descubre/descarga-plone"> Descarga </a></li>
-                  <li><a class="internal-link" href="http://plone.es/descubre/documentacion"> Documentación</a></li>
-                  <li><a class="internal-link" href="http://plone.es/difunde/marketing"> Marketing </a></li>
-                  <li><a class="internal-link" href="http://plone.es/descubre/faq"> FAQ</a></li>
-                  <li><a class="internal-link" href="http://plone.es/login"> Login</a></li>
-                </ul>
-              </div> </div>
+                <div class="portletWrapper">
+                    <div class="portletStaticText portlet-static-atajos">
+                        <h3>Atajos</h3>
+                        <ul>
+                            <li><a class="internal-link" href="descubre/descarga-plone"> Descarga </a></li>
+                            <li><a class="internal-link" href="eventos">Eventos</a></li>
+                            <li><a class="internal-link" href="noticias">Noticias</a></li>
+                            <li><a class="internal-link" href="planet/">Planeta Plone.es</a></li>
+                            <li><a class="internal-link" href="login"> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="FooterPortletB cell position-3 width-3">
-              <div class="portletWrapper"><div class="portletStaticText portlet-static-ayuda">
-                <h3>Ayuda</h3>
-                <ul>
-                  <li><a href="http://usarios-plone.2295514.n2.nabble.com/" target="_blank"> Foro / Mailing List </a></li>
-                  <li><a href="http://plone.es/participa/chat">Chat</a></li>
-                </ul>
-              </div> </div>
+                <div class="portletWrapper">
+                    <div class="portletStaticText portlet-static-ayuda">
+                        <h3>Ayuda</h3>
+                        <ul>
+                            <li><a class="internal-link" href="http://plone.es/documentacion">Documentación</a></li>
+                            <li><a class="internal-link" href="http://plone.es/descubre/faq">FAQ</a></li>
+                            <li><a href="http://usarios-plone.2295514.n2.nabble.com/">Foro/Lista: Usuarios Plone </a></li>
+                            <li><a href="http://plone-regional-forums.221720.n2.nabble.com/Plone-Cono-Sur-f221725.html">Foro/Lista: Plone ConoSur </a></li>
+                            <li><a class="internal-link" href="http://plone.es/participa/chat">Chat</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="FooterPortletC cell position-6 width-3">
-              <div class="portletWrapper"><div class="portletStaticText portlet-static-social">
-                <h3>Siguenos en</h3>
-                <ul><li class="rss-link"><a title="Suscríbete por RSS a las noticias de Plone.es" href="http://plone.es/noticias/aggregator/RSS"> Noticias Plone.es </a></li>
-                  <li class="rss-link"><a href="http://plone.es/planet/atom.xml"> Planet Plone.es </a></li>
-                  <li class="twitter-link"><a title="Siguenos en Twitter" href="http://twitter.com/plone_es" target="_blank"> Twitter </a></li>
-                </ul>
-              </div> </div>
+                <div class="portletWrapper">
+                    <div class="portletStaticText portlet-static-social">
+                        <h3>Síguenos en</h3>
+                        <ul>
+                            <li class="rss-link"><a href="http://plone.es/../../noticias/aggregator/RSS" title="Suscríbete por RSS a las noticias de Plone.es"> Noticias Plone.es </a></li>
+                            <li class="rss-link"><a href="http://plone.es/../../planet/atom.xml"> Planeta Plone.es </a></li>
+                            <li class="twitter-link"><a href="http://twitter.com/plone_es" title="Siguenos en Twitter"> Twitter </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="FooterPortletD cell position-9 width-3">
-              <div class="portletWrapper"><div class="portletStaticText portlet-static-plone-network">
-                <h3>Webs Plone</h3>
-                  <ul>
-                    <li><a title="Plone Content Management System" target="_blank" href="http://plone.org" class="external_plonesite">Plone.org </a></li>
-                    <li><a title="Plone Network" target="_blank" href="http://plone.net" class="external_plonesite">Plone.net </a></li>
-                  </ul>
-               </div> </div>
+                <div class="portletWrapper">
+                    <div class="portletStaticText portlet-static-plone-network">
+                        <h3>Webs Plone</h3>
+                        <ul>
+                            <li><a class="external_plonesite" href="http://plone.org" target="_new" title="Plone Content Management System">Plone.org </a></li>
+                            <li><a class="external_plonesite" href="http://plone.net" target="_new" title="Plone Network">Plone.net </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="FooterPortletE cell position-12 width-4">
-              <div class="portletWrapper">
-                <p><img title="Desarrolado con Plone" src="++theme++plonetheme.plonees/images/logofoot.png" alt="Desarrolado con Plone" /></p>
-                <p><b>Plone.es</b> es desarrollado con <a href="http://plone.org" target="_blank">Plone<sup>&reg;</sup></a>
-                CMS de Fuentes Abiertos de la <a href="http://plone.org/foundation" target="_blank"><b>Fundación Plone</b></a>
-                <acronym title="Copyright">&copy;</acronym> 2000- <span>2012</span> </p>
-                <p>Web alojada en <a target="_blank" href="http://www.k-gigas.com/hosting-plone"> K-Gigas.com</a>,
-                para más informaciones mira en <b><a href="http://plone.es/creditos" target="_blank">créditos</a></b>.</p>
-              </div>
+                <div class="portletWrapper">
+                    <p> <img alt="Desarrollado con Plone" src="++theme++plonetheme.plonees/images/logofoot.png" title="Desarrollado con Plone" /></p>
+                    <p><b>Plone.es</b> está desarrollado con <a href="http://plone.org">Plone<sup>®</sup></a> CMS de Fuentes Abiertas de la <a href="http://plone.org/foundation"><b>Fundación Plone</b></a>
+                     <acronym title="Copyright">©</acronym> 2000- <span>2012</span>
+                     </p>
+                     <p>Web alojada en <b><a href="http://www.k-gigas.com/hosting-plone" target="_blank"> K-Gigas.com</a></b>, tiene más información en <b><a href="/creditos">créditos</a></b>.</p>
+                </div>
             </div>
             <div class="row visualClear"> </div>
-          </div>
         </div> <!-- end portal-footer -->
         <div class="cell position-0 width-full" id="footer-licence">
           <div class="cc-license">
@@ -190,7 +200,7 @@
             El contenido de este sitio web es distribuido bajo una licencia de <a href="http://creativecommons.org/licenses/by-sa/2.5/es/" rel="license" target="_blank"><strong>Creative Commons</strong> Reconocimiento-CompartirIgual 2.5 España</a>.
           </div>
         </div> <!-- end footer-license -->
-      </div>
+    </div>
 
 	</div><!-- end visual-portal-wrapper -->
 	</body>
